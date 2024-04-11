@@ -1,8 +1,4 @@
-# DRIP Registries
-
-This is the working area for the IETF [DRIP Working Group](https://datatracker.ietf.org/wg/drip/documents/) Internet-Draft, "DRIP Registries".
-
-* [Working Group Draft](https://tools.ietf.org/html/draft-ietf-drip-registries)
+# UAS Serial Numbers in DNS
 
 ## Building the Draft
 
