@@ -1,0 +1,15 @@
+rr-type-tbd = #6.TBD({
+    make: tstr,
+    model: tstr,
+    year: uint,
+    color: tstr,
+    take_off_weight: float,
+    length: float,
+    width: float,
+    height: float,
+    num_rotors: uint,
+    rotor_speed: float,
+    compliance_declaration: any,
+    vendor_specific => any,
+    * tstr => any
+})

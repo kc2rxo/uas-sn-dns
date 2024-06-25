@@ -3,7 +3,7 @@ coding: utf-8
 
 title: UAS Serial Numbers in DNS
 abbrev: uas-sn-dns
-docname: draft-wiethuechter-drip-uas-sn-dns-01
+docname: draft-wiethuechter-drip-uas-sn-dns-02
 category: std
 
 ipr: trust200902
@@ -346,6 +346,31 @@ Length: A
 ID: DR1P1SC00L
 FQDN: dr1p1sc00l.a.mfr0.sn.uas.icao.arpa.
 ~~~~
+
+# UAS Characteristic DNS Resource Record
+
+This appendix is informative.
+
+This RR format is a WIP and comments are welcome.
+
+## Wire Format
+
+~~~~
+{::include uas-rr.cddl}
+~~~~
+{: title="UAS Characteristic DNS RR CDDL}
+
+The wire format for the DNS record is presented in CBOR in the form of a semantic tag made up of a CBOR map.
+
+Common keys have been defined, matching those found in {{ua-info-registry}} and other can be added at later dates.
+
+The `serial` and `previousSerial` keys should not be used to avoid PII leakage.
+
+It is recommended that any vendor specific details be placed in the `vendor_specific` key.
+
+## Presentation Format
+
+Presentation of the data found in this RR are expected to be handled by UAS domain aware devices. Its format is a WIP.
 
 # DNS Examples
 
